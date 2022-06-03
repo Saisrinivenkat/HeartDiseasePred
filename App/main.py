@@ -3,6 +3,7 @@ from Pages import Home, TheData, TheModel
 from pycaret.classification import *
 
 
+
 @st.cache
 def load_trained_model():
     load_config('./../Data/model_config') 
