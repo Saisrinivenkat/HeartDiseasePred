@@ -5,12 +5,13 @@ from pycaret.classification import *
 
 @st.cache
 def load_trained_model():
-    return load_model("./Data/final_model")["trained_model"]
+    load_config('./../Data/model_config') 
+    return load_model("./../Data/final_model")["trained_model"]
 
 
 @st.cache
 def load_the_data():
-    return pd.read_csv("./Data/heart_2020.csv")
+    return pd.read_csv("./../Data/heart_2020.csv")
 
 
 # Load the data
